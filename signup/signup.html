@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bachata Mundo</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+  <h1>Bachata Mundo</h1>
+  <div class="container">
+    <h2>Register.</h2>
+    <!-- fields -->
+    <form onsubmit="submitDetails(event)">
+      <section>
+
+        <input class="form-input" type="username" name="username" placeholder="Enter User-Name">
+
+
+        <input class="form-input" type="password" name="password" placeholder="Enter Password">
+
+
+        <input class="form-input" type="password" name="repassword" placeholder="Enter Password Again">
+
+        <div class="password-match-error" style="visibility: hidden;">passwords not match!</div>
+        <div class="user-exist-error" style="visibility: hidden;">username already exist</div>
+        <div class="user-length-error" style="visibility: hidden;">username must to be more than 1 letter</div>
+        <div class="checkbox-error" style="visibility: hidden;">must accept the terms!</div>
+        <hr>
+      </section >
+
+      <!-- actions -->
+
+      <section style = "margin: 37px;">
+        <label class="hyper-link">accepting terms
+          <input type="checkbox" >
+          <span class="checkmark "></span>
+        </label>
+        <button class="button hyper-link submit">Submit</button>
+      </section>
+
+
+    </form>
+
+    <a class="hyper-link" href="../login/login.html">Return to Login</a>
+  </div>
+  <script type="module" src="signup.js"></script>
+</body>
+
+</html>

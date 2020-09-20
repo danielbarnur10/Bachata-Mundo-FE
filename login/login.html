@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bachata Mundo</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+  <h1>Bachata Mundo</h1>
+  <div class="container">
+    <h2>Please Login</h2>
+    <!-- fields -->
+    <form onsubmit="submitDetails(event)">
+      <section>
+        <input class="form-input" type="text" name="username" placeholder="Enter Username">
+        <input class="form-input" type="password" name="password" placeholder="Enter Password">
+        <div  class="credentials-error hyper-link" style="visibility: hidden;">wrong credentials!</div>
+        <div  class="password-error hyper-link" style="visibility: hidden;">wrong password!</div>
+      </section>
+      <!-- actions -->
+      <section >
+        <button class="button" type="submit">Login</button>
+        <a class="hyper-link" href="../signup/signup.html">Sign Up</a>
+      </section>
+    </form>
+  </div>
+  <script type="module" src="login.js"></script>
+</body>
+
+</html>
